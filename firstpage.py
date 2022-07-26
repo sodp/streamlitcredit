@@ -9,7 +9,7 @@ def load_model():
     return data
 data = load_model() 
 '''
-data = pickle.load(open(RFModel.pkl, "rb"))
+data = pickle.load(open("sodp/streamlitcredit/main/RFModel.pkl", "rb"))
 classification = data["model"]
 
 
