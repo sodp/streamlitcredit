@@ -2,13 +2,14 @@ import streamlit as st
 import pickle
 import numpy as np
 
-
+'''
 def load_model():
     with open("RFModel.pkl", 'rb') as file:
         data = pickle.load(file)
     return data
 data = load_model() 
-
+'''
+data = pickle.load(open(RFModel.pkl, "rb"))
 classification = data["model"]
 
 
