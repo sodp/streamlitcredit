@@ -50,3 +50,4 @@ def show_predict_page():
             st.write("Poor Score (:")
 
 
+def show_predict_page()
