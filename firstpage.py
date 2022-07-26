@@ -4,7 +4,7 @@ import numpy as np
 
 
 def load_model():
-    with open(r"C:\Users\Siddhant.Panda\Desktop\MiniProject\ML\RFModel.pkl", 'rb') as file:
+    with open("RFModel.pkl", 'rb') as file:
         data = pickle.load(file)
     return data
 data = load_model() 
