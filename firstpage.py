@@ -41,7 +41,7 @@ def show_predict_page():
             st.write("Good Score :)")
         elif(score == 1):
             st.write("Standard Score :-)")
-        elif(score == 0):
+        elif(score == 2):
             st.write("Poor Score (:")
 
 
