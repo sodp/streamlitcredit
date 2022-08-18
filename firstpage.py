@@ -3,12 +3,7 @@ import pickle
 import numpy as np
 
 
-def load_model():
-    with open(r"C:\Users\Siddhant.Panda\Desktop\MiniProject\ML\RFModel.pkl", 'rb') as file:
-        data = pickle.load(file)
-    return data
-data = load_model() 
-
+data = pickle.load(open("RFModel.pkl", "rb"))
 classification = data["model"]
 
 
@@ -46,7 +41,8 @@ def show_predict_page():
             st.write("Good Score :)")
         elif(score == 1):
             st.write("Standard Score :-)")
-        elif(score == 0):
+        elif(score == 2):
             st.write("Poor Score (:")
 
 
+show_predict_page()
